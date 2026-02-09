@@ -1,0 +1,163 @@
+body {
+    margin: 0 0 0 0
+  }
+
+/****************   Nav Section **********************/
+nav {
+	background-color: lightcoral;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #542323;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+} 
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+	border-top: 2px solid #000;
+  padding: 10px;
+  background-color: #dbcdcc;
+}
+
+/*********** Splash Page ************************/
+header {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+header h1 {
+  font-family: "Bitter", serif;
+  color: #272336;
+}
+
+header img {
+  border: 6px solid #272336;
+  padding: 4px white;
+}
+
+.address {
+ font-family: Cambria, Georgia, “Times New Roman”, serif; 
+ text-decoration: underline;
+}
+
+.tagline {
+  font-family: Cambria, Georgia, “Times New Roman”, serif;
+}
+
+.bitter {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/************* Sections ********************/
+hr {
+  height: 2;
+}
+
+section h3 {
+  padding-left: 5px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #142C70
+}
+
+section dl {
+  padding-left: 15px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+
+section ul {
+  font-size: larger;
+}
+
+section a {
+  color: crimson;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: maroon;
+  text-decoration: underline;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/**************   Projects   *****************/
+.three-col {
+  padding-left: 20px;
+  padding-bottom: 20px;
+	display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card img {
+  align-self: center
+}
+
+.card {
+  display: flex;
+  padding-left: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  flex-direction: column;
+  background-color: azure;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      background-color: lightcoral;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-between;
+      border-bottom: 4px solid #542324;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-decoration: none;
+    }
+
+    .three-col {
+      padding: 20px;
+	    display: grid;
+      gap: 50px;
+      grid-template-columns: 1fr;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+input {
+  max-width: 200px;
+}
+
+textarea {
+   max-width: 300px;
+}
+
+button {
+  max-width: 100px;
+}
