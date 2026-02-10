@@ -1,5 +1,5 @@
 body {
-    margin: 0 0 0 0
+    margin: 0 0 0 0;
   }
 
 /****************   Nav Section **********************/
@@ -26,6 +26,9 @@ footer {
 
 /*********** Splash Page ************************/
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   background-color: lightgray;
 }
@@ -38,6 +41,7 @@ header h1 {
 header img {
   border: 6px solid #272336;
   padding: 4px white;
+  align-self: center;
 }
 
 .address {
@@ -57,17 +61,25 @@ header img {
 }
 
 /************* Sections ********************/
+
 hr {
   height: 2;
 }
 
-section h3 {
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+    border: 1px solid black
+}
+
+section h2 {
+  position: relative;
   padding-left: 5px;
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  color: #142C70
+  border-left: 4px solid #272336;;
+  font-family: "Bitter", serif;
+  color: #272336;
 }
 
 section dl {
@@ -75,6 +87,34 @@ section dl {
   display: grid;
   gap: 5px;
   grid-template-columns: 1fr 1fr;
+  font-size: large;
+}
+
+.extra-info {
+  padding-left: 20px;
+  font-size: normal;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.has-info:hover {
+  color: white;
+  background-color: #454545;
+}
+
+section dt:hover .extra-info {
+  max-height: 50px;
+  opacity: 1;
+  margin-top: 8px;
+}
+
+section li:hover .extra-info {
+  max-height: 50px;
+  opacity: 1;
+  margin-top: 8px;
 }
 
 section ul {
@@ -102,6 +142,7 @@ section a:hover {
 /**************   Projects   *****************/
 .three-col {
   padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 20px;
 	display: grid;
   gap: 50px;
@@ -114,10 +155,21 @@ section a:hover {
 
 .card {
   display: flex;
-  padding-left: 20px;
+  margin-left: 20px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   flex-direction: column;
-  background-color: azure;
+  background-color: rgb(169, 156, 176);
+  transition: all 0.3s ease; 
+}
+
+.card h3 {
+  margin-left: 10px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  background-color: rgb(94, 87, 108);
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
 
 /**************   Responsiveness   *****************/
@@ -147,10 +199,20 @@ section a:hover {
   padding-left: 5px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  position: relative;
+  right: 60px;
+  
+
 }
 
 input {
+  
   max-width: 200px;
 }
 
