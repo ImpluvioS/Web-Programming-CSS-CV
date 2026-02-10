@@ -19,6 +19,7 @@ nav {
 footer {
   display: flex;
   justify-content: center;
+  align-content: flex-end;
 	border-top: 2px solid #000;
   padding: 10px;
   background-color: #dbcdcc;
@@ -63,7 +64,14 @@ header img {
 /************* Sections ********************/
 
 hr {
-  height: 2;
+  color: rgb(0, 0, 0);
+  border: 2px;
+  height: 10px
+}
+
+.alignment {
+  display: flex;
+  margin: 0 15% 0 15%;
 }
 
 section {
@@ -71,7 +79,7 @@ section {
   flex-direction: column;
   justify-content: space-between;
   padding-left: 20px;
-    border: 1px solid black
+  border-top: 1px solid black;
 }
 
 section h2 {
@@ -87,6 +95,7 @@ section dl {
   display: grid;
   gap: 5px;
   grid-template-columns: 1fr 1fr;
+  font-family: "Roboto Slab", serif;
   font-size: large;
 }
 
@@ -106,7 +115,7 @@ section dl {
 }
 
 section dt:hover .extra-info {
-  max-height: 50px;
+  max-height: 100px;
   opacity: 1;
   margin-top: 8px;
 }
@@ -118,6 +127,7 @@ section li:hover .extra-info {
 }
 
 section ul {
+  font-family: "Roboto Slab", serif;
   font-size: larger;
 }
 
@@ -138,6 +148,9 @@ section a:hover {
   font-style: normal;
 }
 
+p {
+ font-family: "Roboto Slab", serif; 
+}
 
 /**************   Projects   *****************/
 .three-col {
@@ -154,6 +167,7 @@ section a:hover {
 }
 
 .card {
+  border: 2px solid black;
   display: flex;
   margin-left: 20px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -200,26 +214,46 @@ section a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Bitter", serif;
   align-items: center;
   margin-bottom: 10px;
+  border: none;
+}
+
+.input-box {
+  margin: 0 30% 0 30%;
+  padding-top: 20px;
+  border: 1px solid #272336;
+  box-shadow: 4px 16px 24px 4px rgba(0,0,0,0.2);
+  background-color: #fefbff;
 }
 
 label {
   position: relative;
-  right: 60px;
-  
-
+  font-weight: bold;
+  right: 15px;
+  font-family: "Bitter", serif;
 }
 
 input {
-  
-  max-width: 200px;
+  font-family: "Bitter", serif;
+  position: relative;
+  right: 10px;
+  max-width: 300px;
+  height: 30px;
+  width: 100%;
+  background-color: rgb(242, 237, 237);
 }
 
 textarea {
-   max-width: 300px;
+  position: relative;
+  right: 10px;
+  max-width: 300px;
+  background-color: rgb(242, 237, 237);
 }
 
 button {
+  position: relative;
+  right: 10px;
   max-width: 100px;
 }
